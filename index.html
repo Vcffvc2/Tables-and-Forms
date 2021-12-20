@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tables and Forms</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tables and Forms</h1>
+    </header>
+    <section>
+      <h2>Tables</h2>
+      <table>
+        <caption>Top 3 Favorite Things</caption>
+        <tr>
+          <th colspan="3">Top Favorites</th>
+        </tr>
+        <tr>
+          <th>Foods</th>
+          <th>Activities</th>
+          <th>Videogames</th>
+        </tr>
+        <tr>
+          <td>Burgers</td>
+          <td>Playing soccer</td>
+          <td>Titan Fall 2</td>
+        </tr>
+        <tr>
+          <td>BBQ Ribs</td>
+          <td>Swimming</td>
+          <td>Warzone</td>
+        </tr>
+
+        <tr>
+          <td>Potatos; any style</td>
+          <td>Coding</td>
+          <td>Rainbow Six Siege</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Combined 2 rows col 2</td>
+          <td rowspan="2">Combined 2 rows col 3</td>
+        </tr>
+
+        <tr>
+          <td >Combined 2 rows col 2</td>
+          <td >Combined 2 rows col 3</td>
+        </tr>
+
+      </table>
+    </section>
+
+    <section>
+      <h2>Forms</h2>
+      <form >
+        <fieldset>
+          <legend>Basic User Data:</legend>
+        <label for="name">Name</label>
+        <input placeholder="Enter your name" type="text" id="name" required />
+
+        <br>
+
+        <label for="height">Height : Feet</label>
+        <input type="text" id="height" />
+        <br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+        <br>
+
+        <label for="super">Super powers</label>
+        <select id="super" name="super">
+          <option value="blank">-- Please choose from below --</option>
+          <option value="mind">Mindreading</option>
+          <option value="fly">Flying</option>
+          <option value="Invisibility">Invisibility</option>
+          <option value="strong">Strength</option>
+
+        </select>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email"/>
+        <br>
+
+        <label for="month">Month Picker</label>
+        <input type="month" id="month" name="month"/>
+        <br>
+        </fieldset>
+
+      <fieldset>
+        <legend>Checkbox and Radio buttons:</legend>
+        <p>Pick your favorite meals:</p>
+        <input type="checkbox" id="breakfast" name="meal" value="breakfast" />
+        <label for="breakfast">Breakfast</label>
+        <br>
+        <input type="checkbox" id="lunch" name="meal" value="lunch" />
+        <label for="lunch">lunch</label>
+        <br>
+        <input type="checkbox" id="dinner" name="meal" value="dinner" />
+        <label for="dinner">dinner</label>
+        <br>
+
+        <p>Pick your favorite language:</p>
+        <input type="radio" id="html" name="langlist" value="html" />
+        <label for="html">HTML</label>
+        <br>
+        <input type="radio" id="css" name="langlist" value="css" />
+        <label for="css">CSS</label>
+        <br>
+        <input type="radio" id="js" name="langlist" value="js" />
+        <label for="js">Javascript</label>
+        <br><br>
+
+      </fieldset>
+
+
+
+      <fieldset>
+        <legend>Ranges, Meters and Numbers:</legend>
+        <label for="range">Range (Slider)</label>
+        <input type="range" id="range" name="range" min="0" max="100" value="125"/>
+        <br>
+
+        <label for="meter">Meter (No Slider)</label>
+        <meter id="meter" name="meter" min="0" max="100" value="125">25 out of 100</meter>
+        <br><br>
+
+        <label for="rating">Rating</label>
+        <input type="number" id="rating" name="rating" min="0" max="25" step="5" value="35" />
+        <br>
+
+      </fieldset>
+        <br><br>
+
+        <input type="submit" value="SUBMIT">
+      </form>
+    </section>
+
+  </body>
+</html> 
